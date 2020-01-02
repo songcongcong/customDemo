@@ -1,11 +1,13 @@
 package com.example.test.myapplicationdemo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.FrameLayout;
+import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.test.myapplicationdemo.flowlayout.MainFlowActivity;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -22,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         EventBus.getDefault().register(this);
         TextView mHome = findViewById(R.id.tv_home);
         TextView mMy = findViewById(R.id.tv_my);
+        Button mFlow = findViewById(R.id.flow_btn);
+        mFlow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainFlowActivity.class));
+            }
+        });
         one();
         mHome.setOnClickListener(new View.OnClickListener() {
             @Override

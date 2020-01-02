@@ -8,4 +8,7 @@
         <attr name="number" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="FlowCustomLayout">
+        <attr name="maxLines" format="integer"></attr>
+    </declare-styleable>
 </resources>
