@@ -8,19 +8,26 @@
     tools:context=".flowlayout.MainFlowActivity">
 
     <Button
+        android:id="@+id/btn_flow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go FlowLayout"
-        android:id="@+id/btn_flow"/>
+        android:text="Go FlowLayout" />
 
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Go FlowLayout"-->
-        <!--android:id="@+id/btn_flow"/>-->
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Go FlowLayout"-->
-        <!--android:id="@+id/btn_flow"/>-->
+    <Button
+        android:id="@+id/btn_go_flex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go FlexBoxLayout" />
+
+    <Button
+        android:id="@+id/btn_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go FlexBoxLayoutManager" />
+
+    <Button
+        android:id="@+id/btn_tag_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go TagFlowLayout" />
 </LinearLayout>

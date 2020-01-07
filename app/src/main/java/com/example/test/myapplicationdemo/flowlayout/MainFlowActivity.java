@@ -15,11 +15,37 @@ public class MainFlowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flow);
         Button mFlow = findViewById(R.id.btn_flow);
+        Button mGoFlexBox = findViewById(R.id.btn_go_flex);
+        Button mFlexManager = findViewById(R.id.btn_manager);
+        Button mTagFlow = findViewById(R.id.btn_tag_layout);
         // 流式布局
         mFlow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainFlowActivity.this, FlowActivity.class));
+            }
+        });
+        // FlexBoxLayout
+        mGoFlexBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainFlowActivity.this, FixBoxLayoutActivity.class));
+            }
+        });
+        // 结合recycleview使用
+        mFlexManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainFlowActivity.this, FlexBoxLayoutManagerActivity.class));
+            }
+        });
+
+        // tagflowlayout
+        mTagFlow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainFlowActivity.this, TagFlowLayoutActivity.class));
+
             }
         });
     }

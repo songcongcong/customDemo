@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".flowlayout.FlowActivity"></activity>
+        <activity android:name=".flowlayout.TagFlowLayoutActivity"></activity>
+        <activity android:name=".flowlayout.FlexBoxLayoutManagerActivity" />
+        <activity android:name=".flowlayout.FixBoxLayoutActivity" />
+        <activity android:name=".flowlayout.FlowActivity" />
         <activity android:name=".flowlayout.MainFlowActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

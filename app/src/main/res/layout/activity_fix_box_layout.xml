@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".flowlayout.FixBoxLayoutActivity">
+    <!--app:flexDirection="row" 内部元素是横向的
+        app:flexWrap="wrap"   内部元素可以换行
+        app:justifyContent="center"  主轴内容的开始方向-->
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/flexbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <Button
+        android:id="@+id/btn_flex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add tag" />
+</LinearLayout>
